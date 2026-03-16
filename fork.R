@@ -9,4 +9,5 @@ system("git fetch upstream")
 
 system("git merge upstream/main")
 
-system("git status")
+#git merge upstream/main --allow-unrelated-histories
+
