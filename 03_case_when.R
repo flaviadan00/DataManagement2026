@@ -210,7 +210,7 @@ pluto<-penguins |>
 ################GRAFICI#########################################
 #fai lo scatter plot body_mass_g e flipper_length_mm
 
-paperino <- ggplot(penguins, aes(x = body_mass_g, y = flipper_length_mm)) +  #prima funzioneè il data per fare i grafici                                                          #aes significa tutto quello che voglio nella tel                                                               #sulla x il peso e sulle y lunghezza ala
+paperino <- ggplot(penguins, aes(x = body_mass_g, y = flipper_length_mm)) +  #prima funzione è il data per fare i grafici                                                          #aes significa tutto quello che voglio nella tel                                                               #sulla x il peso e sulle y lunghezza ala
             geom_point(aes(col="red"))
 #connette i punti con le linee
  #ci da la distribuzione del peso, se è più alta in un punto significa che ci sono più pinguini con quel peso
@@ -226,8 +226,10 @@ ggsave("scatter.png",
 
 #fare un grafico per categorie
             #aes significa tutto quello che voglio nella tela
-ggplot(pippo, aes(x=size_class1, y = flipper_length)) + 
+ggplot(penguins, aes(x=size_class1, y = flipper_length)) + 
   geom_boxplot() #ci da la distribuzione del peso per ogni classe di taglia
+
+
 ############################################################
  # ESERCIZI --> abbinare un grafico
 ############################################################
